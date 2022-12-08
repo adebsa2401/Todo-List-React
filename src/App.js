@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import AboutAppPage from './pages/AboutAppPage';
 import AboutAuthorPage from './pages/AboutAuthorPage';
+import AboutPage from './pages/AboutPage';
 import Root from './pages/Root';
 
 export default class App extends React.PureComponent {
@@ -11,9 +12,10 @@ export default class App extends React.PureComponent {
     const router = createHashRouter(
       createRoutesFromElements(
         <Route path="/" element={<Root />}>
-          <Route path="" element={<AboutAppPage />} />
-          <Route path="about-app" element={<AboutAppPage />} />
-          <Route path="about-author" element={<AboutAuthorPage />} />
+          <Route path="about-" element={<AboutPage />}>
+            <Route path="app" element={<AboutAppPage />} />
+            <Route path="author" element={<AboutAuthorPage />} />
+          </Route>
         </Route>,
       ),
     );
