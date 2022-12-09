@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://adebsa2401.github.io/Math-Magicians)
+- [Live Demo Link](https://todo-app-react-bvp0.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
