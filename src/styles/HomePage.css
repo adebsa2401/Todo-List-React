@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 8rem 20px;
   align-items: center;
+  width: 50%;
 }
 
 .home-content h1 {

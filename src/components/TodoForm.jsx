@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { GrFormAdd } from 'react-icons/gr';
 
 export default class TodoForm extends React.PureComponent {
   constructor(props) {
@@ -35,12 +36,13 @@ export default class TodoForm extends React.PureComponent {
     return (
       <form onSubmit={this.handleSubmit}>
         <input
-          className="new-todo"
+          className="todo-input"
           onChange={this.handleChange}
-          placeholder="What needs to be done?"
+          placeholder="Add todo..."
           type="text"
           value={text}
         />
+        <GrFormAdd className="todo-icon" size={30} onClick={this.handleSubmit} />
       </form>
     );
   }
