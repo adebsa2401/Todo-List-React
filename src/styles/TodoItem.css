@@ -1,0 +1,54 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 5px 15px;
+  margin: 10px 0;
+  gap: 20px;
+}
+
+.todo-item + hr {
+  width: 100%;
+}
+
+.todo-title {
+  margin-right: auto;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #ff4500;
+  background-color: #f1f3f4;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.todo-edit-form {
+  border: none;
+  width: 100%;
+}
+
+.todo-edit-input {
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  outline: 1px solid #dfdfdf;
+  padding: 0.5rem 1rem;
+  padding-right: 0;
+  font-size: 1.2rem;
+}
+
+.check-icon {
+  cursor: pointer;
+  color: #008b8b;
+}
+
+.square-icon {
+  cursor: pointer;
+}
