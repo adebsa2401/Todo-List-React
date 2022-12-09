@@ -2,6 +2,7 @@ import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import PropTypes from 'prop-types';
 import List from './List';
+import '../styles/SideBar.css';
 
 export default class SideBar extends React.PureComponent {
   render() {
@@ -9,7 +10,7 @@ export default class SideBar extends React.PureComponent {
 
     return (
       <div className="sidebar">
-        <GiHamburgerMenu />
+        <GiHamburgerMenu className="hamburger-icon" />
         <List>
           {React.Children.toArray(children)}
         </List>
