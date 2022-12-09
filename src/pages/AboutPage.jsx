@@ -8,8 +8,8 @@ export default class AboutPage extends React.PureComponent {
     return (
       <>
         <SideBar>
-          <SideBarItem to="/about-app">About App</SideBarItem>
-          <SideBarItem to="/about-author">About Author</SideBarItem>
+          <SideBarItem to="/about/app">About App</SideBarItem>
+          <SideBarItem to="/about/author">About Author</SideBarItem>
         </SideBar>
         <div className="content">
           <Outlet />

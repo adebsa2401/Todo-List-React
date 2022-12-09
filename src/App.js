@@ -14,7 +14,7 @@ export default class App extends React.PureComponent {
       createRoutesFromElements(
         <Route path="/" element={<Root />}>
           <Route path="" element={<HomePage />} />
-          <Route path="about-" element={<AboutPage />}>
+          <Route path="about" element={<AboutPage />}>
             <Route path="app" element={<AboutAppPage />} />
             <Route path="author" element={<AboutAuthorPage />} />
           </Route>
