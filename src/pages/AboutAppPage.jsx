@@ -3,7 +3,7 @@ import React from 'react';
 export default class AboutAppPage extends React.PureComponent {
   render() {
     return (
-      <div>
+      <>
         <h2>About the App</h2>
         <p>
           In this app, you can add, delete, submit and edit items.
@@ -13,7 +13,7 @@ export default class AboutAppPage extends React.PureComponent {
           So whether you reload, close your app or reopened it,
           you still have access to your to-dos items.
         </p>
-      </div>
+      </>
     );
   }
 }

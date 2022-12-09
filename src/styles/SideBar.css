@@ -1,0 +1,27 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  min-width: 200px;
+  height: 100vh;
+  padding: 40px;
+}
+
+.opened-sidebar {
+  background-color: #008b8b;
+}
+
+.close-icon path {
+  stroke: #fff;
+}
+
+.hamburger-icon path {
+  stroke: #7b7b7b;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 70px 0;
+}
