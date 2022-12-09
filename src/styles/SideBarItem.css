@@ -1,0 +1,10 @@
+a {
+  color: #9f9f9f;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+a:hover,
+a.active {
+  color: #000;
+}

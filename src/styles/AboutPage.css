@@ -1,0 +1,12 @@
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 20px;
+}
+
+.about-content h2 {
+  margin-bottom: 15px;
+  line-height: 30px;
+  font-size: 30px;
+  color: #444;
+}
