@@ -1,0 +1,15 @@
+.home-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 20px;
+  align-items: center;
+}
+
+.home-content h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1em;
+  color: #ececec;
+  text-transform: lowercase;
+}
