@@ -19,7 +19,7 @@
   stroke: #7b7b7b;
 }
 
-ul {
+.sidebar-list {
   display: flex;
   flex-direction: column;
   gap: 40px;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { GiSquare, GiCheckMark } from 'react-icons/gi';
 import { MdDelete } from 'react-icons/md';
+import '../styles/TodoItem.css';
 
 export default class TodoItem extends React.PureComponent {
   constructor(props) {
@@ -71,13 +72,16 @@ export default class TodoItem extends React.PureComponent {
     const { title, completed } = this.props;
 
     return (
-      <li className="todo-item" onDoubleClick={this.handleEdit}>
-        {completed
-          ? <GiCheckMark className="todo-icon" size={30} onClick={this.handleToggle} />
-          : <GiSquare className="todo-icon" size={30} onClick={this.handleToggle} />}
-        <span className="todo-title">{title}</span>
-        <MdDelete className="todo-icon" size={30} onClick={this.handleDelete} />
-      </li>
+      <>
+        <li className="todo-item" onDoubleClick={this.handleEdit}>
+          {completed
+            ? <GiCheckMark className="check-icon" size={30} onClick={this.handleToggle} />
+            : <GiSquare className="square-icon" size={30} onClick={this.handleToggle} />}
+          <span className={`todo-title ${completed ? 'line-through' : ''}`}>{title}</span>
+          <MdDelete className="delete-icon" size={30} onClick={this.handleDelete} />
+        </li>
+        <hr />
+      </>
     );
   };
 

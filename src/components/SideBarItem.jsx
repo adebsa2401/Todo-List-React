@@ -22,6 +22,9 @@ export default class SideBarItem extends React.PureComponent {
 }
 
 SideBarItem.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   to: PropTypes.string.isRequired,
 };

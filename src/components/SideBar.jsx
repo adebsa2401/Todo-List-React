@@ -25,7 +25,7 @@ export default class SideBar extends React.PureComponent {
             size={30}
             onClick={() => this.setState({ opened: false })}
           />
-          <List>
+          <List className="sidebar-list">
             <SideBarItem to="/">Home</SideBarItem>
             <SideBarItem to="/about/app">About</SideBarItem>
           </List>
@@ -40,7 +40,7 @@ export default class SideBar extends React.PureComponent {
           size={30}
           onClick={() => this.setState({ opened: true })}
         />
-        <List>
+        <List className="sidebar-list">
           {React.Children.toArray(children)}
         </List>
       </div>
@@ -49,5 +49,9 @@ export default class SideBar extends React.PureComponent {
 }
 
 SideBar.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node).isRequired,
+  children: PropTypes.arrayOf(PropTypes.node),
+};
+
+SideBar.defaultProps = {
+  children: [],
 };

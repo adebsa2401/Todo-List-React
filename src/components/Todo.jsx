@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoForm from './TodoForm';
 import TodoList from './TodoList';
-// import '../styles/Todo.css';
+import '../styles/Todo.css';
 import TodoItem from './TodoItem';
 
 export default class TodoSection extends React.PureComponent {
